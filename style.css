@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(imagens/matrix.gif);
+    display: flex;
+    margin: 0px;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    padding-top: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header, nav, main, aside, footer{
+    display: flex;
+    margin: 0px;
+}
+
+header {
+    height:140px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    position: relative;
+    top:40px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.imagem{
+    position: relative;
+    left: 465px;
+    width: 460px;
+}
+
+.inicio{
+    width: 100%;
+    height: 470px;
+}
+
+
+.foto_perfil{
+    width:100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100px;
+    left: 20px;
+    top: 20px;
+}
+
+.nome{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 19px;
+    color: white;
+    width: 500px;
+    top: 50px;
+}
+
+.frase{
+    position: relative;
+    width: 450px;
+    text-decoration: none;
+    text-align: center;
+    bottom: 350px;
+    left: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.link_nav{
+    color: white;
+    text-decoration: none;
+    padding:20px;
+    font-family:sans-serif;
+    font-size: 19px;
+}
+
+.link_nav:hover, .link_aside:hover {
+    background-color:green;
+    border-radius: 80px;
+}
+
+.sobreMim{
+    height: 550px;
+    width: 100%;
+    padding: 50px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 50px;;
+}
+
+
+main {
+    flex: 20 1 400px;
+    position: relative;
+    height: 1580px;
+    flex-wrap: wrap;
+}
+    
+.hab{
+    width: 100%;
+    height: 470px;
+    position: relative;
+    left: 150px;
+    
+}
+
+.proj {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    position: relative;
+    left: 150px;
+}
+
+.lista_hab {
+    padding: 5px 0;
+}
+
+section{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 470px;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    height: 1800px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: 50px;
+}
+
+.extras{
+    position: relative;
+}
+
+.link_aside {
+    padding: 4px;
+    border-radius: 50px;
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;   
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: white;
+    flex: 1 1 100vw;
+    position: relative;
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+}
+
+html{
+    scroll-padding-top: 140px;
+}
+
+@media screen and(max-width: 500px) {
+    header {
+       height:40px;
+       position: fixed;
+       top: 10;
+       z-index: 1000;
+       background-color: white;
+       
+    }
+
+}
